@@ -1,0 +1,6 @@
+a='aku'  #variabel global#
+def f():
+    a='saya'  #variabel lokal#
+    print a
+    
+print a

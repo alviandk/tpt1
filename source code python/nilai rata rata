@@ -1,0 +1,12 @@
+l="y"
+t=0
+n=0
+while (l=="y") or (l=="Y"):
+    nilai=input("Masukkan Nilai : ")
+    t=t+1
+    n=n+nilai
+    l=raw_input("Ingin masukkan nilai lagi?(y/t) : ")
+print "jumlah = ", n
+print "total = ", t
+rata=n/t
+print "rata-rata = ", rata

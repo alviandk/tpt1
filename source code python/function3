@@ -1,0 +1,12 @@
+
+def nilai (x,y):
+    if x>y:
+        print '%s nilai maksimal' %x
+    elif x==y:
+        print '%s sama dengan %s' %(x,y)
+        print x,' sama dengan ',y
+    else:
+        print '%s sma dengan %s' %y
+nilai (10,3)
+nilai (3,3)
+        

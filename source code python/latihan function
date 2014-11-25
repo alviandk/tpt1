@@ -1,0 +1,37 @@
+def operasi (x,y):
+    kali=x*y
+    tambah=x+y
+    kurang=x-y
+    bagi=float(x)/y
+    hasil=[]
+
+    hasil.append(kali)
+    hasil.append(tambah)
+    hasil.append(kurang)
+    hasil.append(bagi)
+    
+    return hasil
+
+a=operasi(10,3)
+print 'hasil perkalian   =',a[0] 
+print 'hasil penjumlahan =',a[1]
+print 'hasil pengurangan =',a[2]
+print 'hasil pembagian   =',a[3]
+print ''
+
+def operasi (x,y):
+
+    hasil=[(x*y),(x+y),(x-y),(float(x)/y)]
+
+    print 'hasil perkalian   =',hasil[0] 
+    print 'hasil penjumlahan =',hasil[1]    
+    print 'hasil pengurangan =',hasil[2]
+    print 'hasil pembagian   =',hasil[3]
+
+operasi (10,3)
+
+
+
+
+
+    

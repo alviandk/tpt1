@@ -1,0 +1,8 @@
+def pangkat(x,y):
+    if y==0:
+        return 1
+    if y>0:
+        x=x*pangkat(x,y-1)
+        return x
+        
+print pangkat(5,0)

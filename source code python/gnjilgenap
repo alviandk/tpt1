@@ -1,0 +1,6 @@
+a=input("masukkan angka:")
+if a%2==1:
+    print a,"bilangan ganjil"
+else:
+    print a,"bilangan genap"
+    

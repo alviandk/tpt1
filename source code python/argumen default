@@ -1,0 +1,6 @@
+def katakan(pesan,jumlah=1):
+            print pesan*jumlah
+
+katakan('haloo')
+print' '
+katakan('hola ',3)

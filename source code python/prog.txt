@@ -1,0 +1,262 @@
+Faktor Persekutuan Terbesar
+
+Program CariFPB;
+
+Uses WinCrt;
+Var bil1,bil2:integer;
+Label Input;
+{Fungsi untuk mencari nilai FPB}
+Function FPB(bil1,bil2:integer):integer;
+var sisa:integer;
+Begin
+    sisa := bil1 mod bil2;
+    while sisa <> 0 Do
+    Begin
+       bil1 := bil2;
+       bil2 := sisa;
+       sisa := bil1 mod bil2;
+    End;
+       FPB := bil2;
+End;
+Function KPK(bil1,bil2:integer):integer;
+Begin
+KPK := (bil1*bil2) div FPB(bil1,bil2);
+End;
+{Eksekusi Program}
+Begin
+   Input:
+   Clrscr;
+   Writeln('Program Pencari FPB dan KPK');
+   Writeln('===========================');
+   Write ('Bilangan 1: ');Readln(bil1);
+   Write ('Bilangan 2: ');Readln(bil2);
+   Writeln ('==================');
+   {Cek bilangan, apakah bilangan nol atau bukan
+   Jika ya, Fungsi FPB akan di eksekusi}
+   If (bil1 > 0) and (bil2 > 0) then
+   Begin
+      Writeln ('FPB = ',FPB(bil1,bil2));
+      Writeln ('KPK = ',KPK(bil1,bil2));
+   End
+   {Jika tidak, tidak ada eksekusi terhadap fungsi FPB}
+   Else
+   Begin
+      Writeln ('WARNING: Input bukan bilangan bulat POSITF!!');
+      Writeln ('TEKAN ENTER UNTUK MENGULANG');
+      Readln;
+      Goto Input;
+   End;
+   Readln;
+End.
+
+
+                                   Mencari Rata-rata bilangan bulat
+
+program Rata_Rata_Bilangan_Bulat ;
+     uses wincrt ;
+     procedure HitungRataRata ;
+     var
+     x, N, k, jumlah : integer ;
+     rata : real ;
+     begin
+          write ( 'Masukkan banyaknya data ? ' ); readln (N) ;
+          jumlah := 0 ;
+          for k := 1 to N do
+            begin
+              write ( 'Nilai x : ? ' );
+              readln (x) ;
+              jumlah := jumlah + x ;
+            end;
+          rata := jumlah/N ;
+          writeln ( 'Nilai rata rata =' , rata:0:2) ;
+     end;
+     begin
+          writeln ( 'Menghitung rata rata N buah bilangan bulat' );
+          HitungRataRata;
+     end.
+Hasilnya :
+
+Menghitung rata rata N buah bilangan bulat
+Masukkan banyaknya data ?
+Nilai x : ? 34
+nilai x : ? 12
+nilai x : ? 23
+Nilai rata-rata = 23.00
+
+
+          Menghitung penjumlahan pangkat dua
+
+uses wincrt;
+var a,b:integer;
+begin
+clrscr;
+write('masukkan bilangan pertama :');readln(a);
+write('masukkan bilangan kedua :');readln(b);
+writeln(a,' adalah bilangan pertama yang di inputkan');
+writeln(b,' adalah bilangan kedua yang di inputkan');
+writeln(a,' adalah bilangan pertama yang di inputkan');
+write('Pangkat dua dari penjumlahan ',a,' dan ' ,b, ' adalah ');
+writeln(sqr(a+b));
+writeln(a,' ditambah ',b,' adalah ', a+b);
+readln
+end.
+
+
+
+Program Menetukan Hari
+program caseof;
+uses wincrt;
+var hari:integer;
+begin
+clrscr;
+write('Hari ke..= ');readln(hari);
+case hari of
+1:Begin
+writeln('Hari ke-',hari,' adalah Senin');
+end;
+2:Begin
+writeln('Hari ke-',hari,' adalah Selasa');
+end;
+3:Begin
+writeln('Hari ke-',hari,' adalah Rabu');
+end;
+4:Begin
+writeln('Hari ke-',hari,' adalah Kamis');
+end;
+5:begin
+writeln('Hari ke-',hari,' adalah Jumat');
+end;
+6:begin
+writeln('Hari ke-',hari,' adalah Sabtu');
+end;
+7:Begin
+writeln('Hari ke-',hari,' adalah Minggu');
+end;
+else
+writeln('Anda memasukkan hari yang salah');
+end;
+readln
+end.
+*********Tampilan Program**********
+Hari ke..= 7
+Hari ke-7 adalah Minggu
+
+
+Program Pascal Mencari Bilangan Ganjil dan Totalnya
+uses wincrt;
+var
+x,sisa,y:integer;
+hasil:string;
+ begin
+ write('Masukan Bilangan Bulat= ');
+ readln(y);
+ hasil:='';
+ x:=y;
+ repeat
+ sisa:= x mod 2;
+ x:= x div 2;
+ case (sisa) of
+ 0: hasil:='0' + hasil;
+ 1: hasil:='1' + hasil;
+ end;
+ until (x=0) ;
+ gotoxy(5,3);
+ writeln(y,' Bil biner = ',hasil);
+ end.
+
+Mencari bilangan terbesar
+
+program bil_trbsr;
+uses wincrt;
+var
+a,b,c : integer;
+terbesar : integer;
+begin
+writeln('       PROGRAM MENCARI BILANGAN TERBESAR');
+writeln('       -------------------------------------------------------------');
+writeln;
+writeln('Masukkan 3 Buah bilangan');
+writeln;
+write('Bilangan Ke-1 :'); readln(a);
+write('Bilangan Ke-2 :'); readln(b);
+write('Bilangan Ke-3 :'); readln(c);
+                terbesar:=0;
+                if (a > b) then
+                terbesar:= a
+                else terbesar:=b;
+                if (terbesar > c) then
+                terbesar:= terbesar
+                else terbesar:= c;
+                writeln;
+                write ('Jadi Bilangan Terbesarnya Adalah :',terbesar);
+end.
+
+Menghitung Bilangan PRIMA
+uses wincrt;
+var
+i,j:integer;
+procedure prima(a:integer);
+var b:integer;
+begin
+if a=2 then writeln('':10,a,' Bilangan Prima');
+for b:=2 to a-1 do
+begin
+if a mod b=0 then
+begin
+b:=a-1;
+end
+else
+if b=a-1 then
+writeln('':10,a,' Bilangan Prima');
+end;
+end;
+begin
+write('Masukkan Angka : ');readln(j);
+for i:=1 to j do
+begin
+prima(i);
+end;
+
+end.
+
+Mengubah Bilangan Bulat ke Biner
+uses wincrt;
+var
+x,sisa,y:integer;
+hasil:string;
+ begin
+ write('Masukan Bilangan Bulat= ');
+ readln(y);
+ hasil:='';
+ x:=y;
+
+ repeat
+ sisa:= x mod 2;
+ x:= x div 2;
+
+ case (sisa) of
+ 0: hasil:='0' + hasil;
+ 1: hasil:='1' + hasil;
+ end;
+
+ until (x=0) ;
+ gotoxy(5,3);
+ writeln(y,' Bil biner = ',hasil);
+ end.
+
+Program Menghitung Luas dan Keliling Lingkaran
+uses wincrt;
+var r:integer;
+var luas,keliling:real;
+const phi = 3.14;
+begin
+clrscr;
+write('Masukkan jari-jari lingkaran : ');
+readln(r);
+luas := phi*r*r;
+keliling := phi*(2*r);
+writeln('======================');
+writeln('Luas lingkaran dengan jari-jari ',r,' adalah ',luas:9:2);
+writeln('Keliling lingkaran dengan jari-jari ',r, 'adalah ',keliling:9:2);
+readln
+end.

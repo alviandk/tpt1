@@ -1,0 +1,32 @@
+error handling
+1. compile error
+	- syntax error
+2. runtime error
+	- semantic error
+	
+	
+exception
+
+1.try :
+	statement
+	
+except --> jenis kesalahan
+
+2.try:
+	statement
+finally:
+	statement
+	
+3. raise
+4. with
+
+jenis exception
+1. KeyboardInterrupt
+2. EOFError
+3. ZeroDivisionError
+4. Exception
+5. IndexError
+6. KeyError
+7. TypeError
+8. AttributeError
+9. IOError

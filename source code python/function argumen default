@@ -1,0 +1,10 @@
+def fungsi(a,b=5,c=7):
+    print 'Nilai a=',a
+    print 'Nilai b=',b
+    print 'Nilai c=',c
+
+fungsi(3,9)
+print''
+fungsi(25,c=15)
+print''
+fungsi(c=50,a=100)

@@ -1,0 +1,7 @@
+x=50
+def f(x):
+    print 'Nilai x=',x
+    x=2
+    print 'Merubah Local variabel x=',x
+f(100)
+print 'Nilai x masih %s' %x

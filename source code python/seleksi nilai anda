@@ -1,0 +1,22 @@
+l="y"
+a=0
+while (l=="y") or (l=="Y"):
+    n=input("Masukkan Nilai : ")
+    if (n>=85) and (n<=100):
+        print " Nilai Anda A"
+    elif (n>=75)and (n<85):
+        print " Nilai Anda B"
+    elif (n>=55)and (n<75):
+        print " Nilai Anda C"
+    elif (n>=40)and (n<55):
+        print " Nilai Anda D"
+    else:
+        print " Nilai Anda E"
+    a=a+1
+    n=n+n
+    l=raw_input("Ingin masukkan nilai lagi?(y/t) : ")
+    if l=="t":
+        print "jumlah = ", n
+        print "total = ", a
+        rata=n/a
+        print "rata-rata = ", rata

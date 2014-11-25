@@ -1,0 +1,20 @@
+x=50 #global variabel#
+def f1():
+    print 'Nilai x=',x
+
+def f2():
+    x=100 #nulis ke lokal variabel#
+    print 'Nilai x=',x
+
+def f3():
+    global x
+    x=100
+    print 'Nilai x=',x
+
+f1()
+print 'Nilai x  :',x
+f2()
+print 'Nilai x  :',x
+f3()
+print 'Nilai x  :',x
+

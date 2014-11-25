@@ -1,0 +1,10 @@
+passw="python"
+pw=raw_input("Masukkan Password:")
+if pw==passw:
+    print "Silakan masuk"
+else:
+    print "password anda salah"
+
+
+
+    

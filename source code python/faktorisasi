@@ -1,0 +1,7 @@
+def faktor(x):
+    x=input('Angka : ')
+    for u in x:
+        if x%u==0:
+            print x/u,','
+    
+        

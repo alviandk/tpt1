@@ -1,0 +1,8 @@
+harga_toko=150000
+harga_jual=input("masukkan harga jual : ")
+if harga_jual > harga_toko:
+    bonus=0.02*harga_toko
+    print "bonus= ", bonus
+    print "selamat"
+else:
+    print "coba lagi"

@@ -1,0 +1,10 @@
+x1='ini global'
+def f():
+    x2='ini lokal'
+    print x1
+    print x2
+    print len(x1),len(x2)
+
+f()
+print''
+print x1

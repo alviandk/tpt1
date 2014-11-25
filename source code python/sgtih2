@@ -1,0 +1,10 @@
+y=raw_input("masukkan karakter:")
+x=input("masukkan jumlah baris:")
+for a in range(x):
+    for b in range(x):
+        print "9",
+    print " "
+    for a in range(x):
+          print y,
+    print""
+

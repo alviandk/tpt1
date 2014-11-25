@@ -1,0 +1,15 @@
+3 fungsi dalam 1 program
+fungsi untuk 
+1. pangkat
+2. faktorial
+3. fibonaci
+
+pangkat
+5^4=5*(5^3)
+
+faktorial
+5!= 5*4*3*2*1
+
+fibonaci
+f1=0,f2=1
+f3=f1+f2
